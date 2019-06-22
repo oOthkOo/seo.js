@@ -1,4 +1,4 @@
-# Seo.js ![Travis Status](https://travis-ci.org/oOthkOo/seo.js.png) [![SlugBay Badge](https://www.slugbay.com/pictures/badges/slugbay-simple.svg)](https://www.slugbay.com)
+# Seo.js [![SlugBay Badge](https://www.slugbay.com/pictures/badges/slugbay-simple.svg)](https://www.slugbay.com)
 
 The most simple, customizable and easy to use JavaScript SEO management library.
 
