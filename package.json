@@ -1,0 +1,14 @@
+{
+  "name": "seo.js",
+  "version": "1.0.0",
+  "description": "Seo JS library",
+  "main": "seo.js",
+  "keywords": [
+    "seo",
+    "tags",
+    "meta",
+    "metas"
+  ],
+  "author": "Tierry Danquin",
+  "license": "MIT"
+}
