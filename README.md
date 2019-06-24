@@ -4,28 +4,21 @@ The most simple, framework agnostic and easy to use JavaScript SEO meta tag mana
 
 Features
 -----
- * Support the **new** operator.
- * Support the **instanceof** operator.
- * Support the standard OO **inheritance**
- * Support super constructor **automatic** call
- * Support extending a class **C** via **C.prototype**
- * Support **automatic** 'getters', 'setters' methods generation
- * Support **surcharged** methods, call a specific method from arguments count
- * Support **static** methods, call from object as MyClass.method()
- * Support custom class definition **format** (configure all plugins)
- * Support customs **plugins** (create your own plugin or use defaults)
- * Support plugins **management** (whitelist, blacklist plugin from your class definition)
+ * Built in pure vanilla JavaScript with no dependencies.
+ * Blazing fast SEO tags update.
+ * Support the **tag** meta elements.
+ * Support the **link** meta elements.
+ * Support the **meta** meta elements.
+ * Support extending by custom tag configurations
+ * Support tag generation white templates and tokens.
 
-Installation
+Getting Started
 -----
-To use Embryo in browser, just insert this tag in your html :
+To use `Seo.js` in browser, just insert this tag in your html :
 
 ```javascript
 <script src="dist/seo-0.0.1.min.js" type="text/javascript"></script>
 ```
-
-Getting Started
------
 
 ## Initialisation
 
@@ -36,11 +29,11 @@ Getting Started
     })
 ```
 
-## Register <tag>, <link> and <meta> SEO tags
+## Register (tag, link and meta) SEO tags
 
 ### Seo.use(config)
 
-Register a meta configuration. You must register all metas you want to manage.
+Register a meta configuration. You must register all metas before to use the library.
 
 * `config` - **Object** - Configuration to use.
 
