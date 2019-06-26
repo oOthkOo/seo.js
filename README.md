@@ -20,14 +20,24 @@ To use `Seo.js` in browser, just insert this tag in your html :
 <script src="dist/seo-0.0.1.min.js" type="text/javascript"></script>
 ```
 
-## Initialisation
+## Initialisation options
+
+| name                | type      | default  | description                                        |
+|---------------------|-----------|----------|----------------------------------------------------|
+| debug               | `Boolean` | `false`  | Enable debug mode                                  |
+| headSelector        | `String`  | `'head'` | Page <head> CSS selector                           |
+| ignoreEmptyTagValue | `Boolean` | `true`   | Ignore all meta registered with no values provided |
+
+#### Exemple :
 
 ```javascript
     var seo = new Seo({
         debug: true,
-        headSelector: 'head'
+        headSelector: 'head',
+        ignoreEmptyTagValue: true
     })
 ```
+
 
 ## Register (tag, link and meta) SEO tags
 
@@ -115,6 +125,26 @@ Generate a *link[rel=""]* meta configuration. This configuration produces tags f
     ]))
 ```
 
+### Seo.clearMetas()
+
+Delete all registered SEO meta tags.
+
+#### Exemple :
+
+```javascript
+    seo.clearMetas()
+```
+
+### Seo.clearTerms()
+
+Delete all terms used for templating.
+
+#### Exemple :
+
+```javascript
+    seo.clearTerms()
+```
+
 ### Seo.setTerms(terms)
 
 Setting a couple of terms to be used for templating.
@@ -134,7 +164,7 @@ Setting a couple of terms to be used for templating.
 
 ### Seo.clear()
 
-Remove all registered metas in current html page.
+Delete all registered meta tags in current html page.
 
 #### Exemple :
 
@@ -142,11 +172,14 @@ Remove all registered metas in current html page.
     seo.clear()
 ```
 
-### Seo.update(metas)
+### Seo.update(metas, only)
 
 Update all metas specified in current html page. Theses metas must be registered by `Seo.use(config)` before calling this function.
 
 * `metas` - **Object** - Meta name/value list ({name: value})
+* `only` - **Boolean** - Meta scope (default: `false`)
+    - `true` : Update only metas specified in `metas` argument
+    - `false`: Update all metas registered and overwrite if needed
 
 #### Exemple :
 

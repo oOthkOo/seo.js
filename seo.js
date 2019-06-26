@@ -6,7 +6,8 @@ function Seo (options) {
 Seo.prototype.getDefaultOptions = function () {
     return {
         debug: false,
-        headSelector: 'head'
+        headSelector: 'head',
+        ignoreEmptyTagValue: true
     }
 }
 Seo.prototype.use = function (metas) {
@@ -122,8 +123,21 @@ Seo.prototype.clear = function () {
         }
     }.bind(this))
 }
-Seo.prototype.update = function (metas) {
-    Object.keys(metas).forEach(function (name) {
+Seo.prototype.update = function (metas, only) {
+
+    var finalMetas = {}
+    if (only) {
+        finalMetas = metas
+    }
+    else {
+        var defMetas = {}
+        Object.keys(this.metas).forEach(function (name) {
+            defMetas[name] = ''
+        })
+        finalMetas = Object.assign(defMetas, metas)
+    }
+
+    Object.keys(finalMetas).forEach(function (name) {
         var meta = this.metas[name]
         if (!meta) {
             this.throwError('meta (' + name + ') not registered')
@@ -134,22 +148,25 @@ Seo.prototype.update = function (metas) {
         if (!headNode) {
             this.throwError('head (' + headSelector + ') element not found')
         }
-        var metaNode = this.domFind(meta.selector)
-        if (metaNode) {
-            this.domRemove(metaNode)
-            this.options.debug && this.log('meta (' + name + ') removed')
+
+        var value = metas[name] || null
+        if (value || !this.options.ignoreEmptyTagValue) {
+            Object.keys(this.terms).forEach(function (term) {
+                var regex = new RegExp('\{' + term + '\}', 'gi')
+                value = value.replace(regex, this.terms[term])
+            }.bind(this))
+
+            var html = meta.template.replace(/\{value\}/g, value)
+            this.options.debug && this.log(html)
+
+            var metaNode = this.domFind(meta.selector)
+            if (metaNode) {
+                this.domRemove(metaNode)
+                this.options.debug && this.log('meta (' + name + ') removed')
+            }
+            this.domAppend(headNode, this.domCreate(html))
         }
-        var value = metas[name]
-
-        Object.keys(this.terms).forEach(function (term) {
-            var regex = new RegExp('\{' + term + '\}', 'gi')
-            value = value.replace(regex, this.terms[term])
-        }.bind(this))
-
-        var html = meta.template.replace(/\{value\}/g, value)
-        this.options.debug && this.log(html)
-
-        this.domAppend(headNode, this.domCreate(html))
+        console.log('value[' + name + ']', value)
     }.bind(this))
 }
 Seo.prototype.clearTerms = function () {
