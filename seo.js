@@ -150,6 +150,7 @@ Seo.prototype.update = function (metas, only) {
         }
 
         var value = metas[name] || null
+
         if (value || !this.options.ignoreEmptyTagValue) {
             Object.keys(this.terms).forEach(function (term) {
                 var regex = new RegExp('\{' + term + '\}', 'gi')
@@ -166,7 +167,7 @@ Seo.prototype.update = function (metas, only) {
             }
             this.domAppend(headNode, this.domCreate(html))
         }
-        console.log('value[' + name + ']', value)
+        this.options.debug && this.log('meta name[' + name + '] value[' + value + ']')
     }.bind(this))
 }
 Seo.prototype.clearTerms = function () {
