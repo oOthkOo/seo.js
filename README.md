@@ -28,7 +28,7 @@ To use `Seo.js` in browser, just insert this tag in your html :
 | headSelector        | `String`  | `'head'` | Page <head> CSS selector                           |
 | ignoreEmptyTagValue | `Boolean` | `true`   | Ignore all meta registered with no values provided |
 
-#### Exemple :
+#### Example :
 
 ```javascript
     var seo = new Seo({
@@ -47,7 +47,7 @@ Register a meta configuration. You must register all metas before to use the lib
 
 * `config` - **Object** - Configuration to use.
 
-#### Exemple :
+#### Example :
 
 ```javascript
     seo.use({
@@ -63,7 +63,7 @@ Generate a *tag* meta configuration. This configuration produces tags from this 
 
 * `name` - **String | Array** - Tag name(s)
 
-#### Exemple :
+#### Example :
 
 ```javascript
     // Register 'title' tag and produces <title>{value}</title>
@@ -80,7 +80,7 @@ Generate a *meta[name=""]* meta configuration. This configuration produces tags 
 
 * `name` - **String | Array** - Tag name(s)
 
-#### Exemple :
+#### Example :
 
 ```javascript
     // Register 'title' tag and produces <meta name="title" content="{value}" />
@@ -97,7 +97,7 @@ Generate a *meta[property=""]* meta configuration. This configuration produces t
 
 * `name` - **String | Array** - Tag name(s)
 
-#### Exemple :
+#### Example :
 
 ```javascript
     // Register 'og:title' tag and produces <meta name="og:title" content="{value}" />
@@ -114,7 +114,7 @@ Generate a *link[rel=""]* meta configuration. This configuration produces tags f
 
 * `name` - **String | Array** - Tag name(s)
 
-#### Exemple :
+#### Example :
 
 ```javascript
     // Register 'favicon' tag and produces <link rel="favicon" href="{value}" />
@@ -129,7 +129,7 @@ Generate a *link[rel=""]* meta configuration. This configuration produces tags f
 
 Delete all registered SEO meta tags.
 
-#### Exemple :
+#### Example :
 
 ```javascript
     seo.clearMetas()
@@ -139,7 +139,7 @@ Delete all registered SEO meta tags.
 
 Delete all terms used for templating.
 
-#### Exemple :
+#### Example :
 
 ```javascript
     seo.clearTerms()
@@ -151,7 +151,7 @@ Setting a couple of terms to be used for templating.
 
 * `terms` - **Object** - Tokens name/value list ({name: value})
 
-#### Exemple :
+#### Example :
 
 ```javascript
     // Setting terms for templating
@@ -166,7 +166,7 @@ Setting a couple of terms to be used for templating.
 
 Delete all registered meta tags in current html page.
 
-#### Exemple :
+#### Example :
 
 ```javascript
     seo.clear()
@@ -181,7 +181,7 @@ Update all metas specified in current html page. Theses metas must be registered
     - `true` : Update only metas specified in `metas` argument
     - `false`: Update all metas registered and overwrite if needed
 
-#### Exemple :
+#### Example :
 
 ```javascript
     // Setting terms for templating
