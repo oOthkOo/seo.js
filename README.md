@@ -145,7 +145,7 @@ Delete all terms used for templating.
     seo.clearTerms()
 ```
 
-### Seo.setTerms(terms)
+### Seo.updateTerms(terms)
 
 Setting a couple of terms to be used for templating.
 
@@ -155,7 +155,7 @@ Setting a couple of terms to be used for templating.
 
 ```javascript
     // Setting terms for templating
-    seo.setTerms({
+    seo.updateTerms({
         'title': "Seo.js - A beautiful example",
         'description': "Seo example page description",
         'website': "https://www.oothkoo.com"
