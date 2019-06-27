@@ -245,7 +245,7 @@ window.addEventListener('DOMContentLoaded', function () {
     ]))
 
     // Setting terms for templating
-    seo.setTerms({
+    seo.updateTerms({
         'name': "SlugBay",
         'title': "Seo - A beautiful example",
         'description': "SlugBay helps you centralise and better manage all your resources, and discover new interesting material more quickly",

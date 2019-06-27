@@ -173,6 +173,6 @@ Seo.prototype.update = function (metas, only) {
 Seo.prototype.clearTerms = function () {
     this.terms = {}
 }
-Seo.prototype.setTerms = function (terms) {
+Seo.prototype.updateTerms = function (terms) {
     this.terms = Object.assign(this.terms, terms)
 }

@@ -1,14 +1,24 @@
 {
   "name": "seo.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Seo JS library",
   "main": "seo.js",
+  "scripts": {
+    "build": "node ./scripts/build.js"
+  },
   "keywords": [
     "seo",
     "tags",
     "meta",
-    "metas"
+    "metas",
+    "title",
+    "search",
+    "optimization",
+    "seo-tag"
   ],
   "author": "Tierry Danquin",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "uglify-js": "^3.6.0"
+  }
 }
