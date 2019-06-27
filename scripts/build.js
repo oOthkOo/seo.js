@@ -14,7 +14,7 @@ https://github.com/oOthkOo/seo.js */`
 const options = {
     compress: {
         global_defs: {
-            "@console.log": "alert"
+            
         },
         passes: 2
     },

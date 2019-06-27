@@ -17,7 +17,7 @@ Getting Started
 To use `Seo.js` in browser, just insert this tag in your html :
 
 ```javascript
-<script src="dist/seo-0.0.1.min.js" type="text/javascript"></script>
+<script src="dist/seo-X.X.X.min.js" type="text/javascript"></script>
 ```
 
 ## Initialisation options
