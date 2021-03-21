@@ -1,5 +1,10 @@
 # Seo.js [![SlugBay Badge](https://www.slugbay.com/pictures/badges/slugbay-simple.svg)](https://www.slugbay.com)
 
+[![Stars](https://img.shields.io/github/stars/oothkoo/seo.js.svg?style=for-the-badge)](https://github.com/oothkoo/seo.js)
+[![Latest Stable Version](https://img.shields.io/npm/v/@oothkoo/seo-js.svg?style=for-the-badge)](https://www.npmjs.com/package/@oothkoo/seo-js)
+[![NPM Downloads](https://img.shields.io/npm/dt/@oothkoo/seo-js.svg?style=for-the-badge)](https://www.npmjs.com/package/@oothkoo/seo-js)
+[![NPM Downloads](https://img.shields.io/npm/dm/@oothkoo/seo-js.svg?style=for-the-badge)](https://www.npmjs.com/package/@oothkoo/seo-js)
+
 The most simple, framework agnostic and easy to use JavaScript SEO meta tag management library.
 
 Features
@@ -14,6 +19,14 @@ Features
 
 Getting Started
 -----
+
+<h4>NodeJS</h4>
+To install `Seo.js` module from NPM repository :
+
+```sh
+  npm install @oothkoo/seo-js
+```
+<h4>Browser</h4>
 To use `Seo.js` in browser, just insert this tag in your html :
 
 ```javascript
@@ -31,13 +44,14 @@ To use `Seo.js` in browser, just insert this tag in your html :
 #### Example :
 
 ```javascript
+    import Seo from '@oothkoo/seo-js'
+
     var seo = new Seo({
         debug: true,
         headSelector: 'head',
         ignoreEmptyTagValue: true
     })
 ```
-
 
 ## Register (tag, link and meta) SEO tags
 

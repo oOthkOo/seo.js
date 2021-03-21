@@ -83,4 +83,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
         'slack-app-id': "A2UTWA5PT"
     })
+
+    var head = seo.domFind('head')
+    var results = seo.domFind('.results')
+    results.textContent = head.innerHTML
 })

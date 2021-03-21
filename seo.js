@@ -176,3 +176,6 @@ Seo.prototype.clearTerms = function () {
 Seo.prototype.updateTerms = function (terms) {
     this.terms = Object.assign(this.terms, terms)
 }
+if (module) {
+    module.exports = Seo
+}

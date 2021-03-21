@@ -1,7 +1,7 @@
 {
-  "name": "seo.js",
-  "version": "1.0.1",
-  "description": "Seo JS library",
+  "name": "@oothkoo/seo-js",
+  "version": "1.0.2",
+  "description": "SeoJS library",
   "main": "seo.js",
   "scripts": {
     "build": "node ./scripts/build.js"
@@ -20,5 +20,9 @@
   "license": "MIT",
   "devDependencies": {
     "uglify-js": "^3.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@oothkoo-github:oOthkOo/seo.js.git"
   }
 }
