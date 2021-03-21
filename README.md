@@ -1,4 +1,4 @@
-# Seo.js [![SlugBay Badge](https://www.slugbay.com/pictures/badges/slugbay-simple.svg)](https://www.slugbay.com)
+# Seo.js [![SlugBay Badge](https://www.slugbay.com/pictures/badges/slugbay-simple.svg)](https://www.slugbay.com) [(demo)](https://oothkoo.github.io/seo.js)
 
 [![Stars](https://img.shields.io/github/stars/oothkoo/seo.js.svg?style=for-the-badge)](https://github.com/oothkoo/seo.js)
 [![Latest Stable Version](https://img.shields.io/npm/v/@oothkoo/seo-js.svg?style=for-the-badge)](https://www.npmjs.com/package/@oothkoo/seo-js)
