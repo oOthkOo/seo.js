@@ -1,6 +1,6 @@
 {
   "name": "@oothkoo/seo-js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "SeoJS library",
   "main": "seo.js",
   "scripts": {
