@@ -3,6 +3,7 @@ function Seo (options) {
     this.clearMetas()
     this.clearTerms()
 }
+Seo.prototype.version = '1.0.3'
 Seo.prototype.getDefaultOptions = function () {
     return {
         debug: false,
