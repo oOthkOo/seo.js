@@ -1,20 +1,30 @@
 {
   "name": "@oothkoo/seo-js",
-  "version": "1.0.4",
-  "description": "SeoJS library",
+  "version": "1.0.5",
   "main": "seo.js",
   "scripts": {
     "build": "node ./scripts/build.js"
   },
+  "description": "A simple vanilla JavaScript SEO library for SPAs (Single Page Applications).",
   "keywords": [
     "seo",
+    "seo-tags",
     "tags",
+    "search engine",
+    "html",
+    "vanilla",
+    "javascript",
+    "social",
+    "graph",
     "meta",
     "metas",
     "title",
     "search",
     "optimization",
-    "seo-tag"
+    "seo-tag",
+    "meta-template",
+    "meta-elements",
+    "html-template"
   ],
   "author": "Tierry Danquin",
   "license": "MIT",
