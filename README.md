@@ -1,4 +1,4 @@
-# Seo.js [![SlugBay Badge](https://www.slugbay.com/pictures/badges/slugbay-simple.svg)](https://www.slugbay.com) [(demo)](https://oothkoo.github.io/seo.js)
+# Seo.js
 
 [![Stars](https://img.shields.io/github/stars/oothkoo/seo.js.svg?style=for-the-badge)](https://github.com/oothkoo/seo.js)
 [![Latest Stable Version](https://img.shields.io/npm/v/@oothkoo/seo-js.svg?style=for-the-badge)](https://www.npmjs.com/package/@oothkoo/seo-js)
@@ -307,5 +307,6 @@ Donations
 
 Coins | Symbols | Addresses
 --- | --- | ---
-<img src="https://github.com/oOthkOo/hyper-manager/blob/main/pictures/btc.svg" alt="Bitcoin"/> | BTC | 3B52fbzNFQTaKZxWf5GrCUsASD2UP8na4A
-<img src="https://github.com/oOthkOo/hyper-manager/blob/main/pictures/eth.svg" alt="Ethereum"/> | ETH | 0x1C389f1f85Cdb3C2996b83fAc87E496A80698B7C
+<img width="32" src="https://github.com/oOthkOo/hyper-manager/blob/main/pictures/btc.svg" alt="Bitcoin"/> | BTC | 3B52fbzNFQTaKZxWf5GrCUsASD2UP8na4A
+<img width="32" src="https://github.com/oOthkOo/hyper-manager/blob/main/pictures/eth.svg" alt="Ethereum"/> | ETH | 0x1C389f1f85Cdb3C2996b83fAc87E496A80698B7C
+<img width="32" src="https://github.com/oOthkOo/hyper-manager/blob/main/pictures/sol.svg" alt="Solana"/> | SOL | F14pWhGjGLcCF8RMk4JhbK2kD49iBBwa9KFygRJo54Fm
